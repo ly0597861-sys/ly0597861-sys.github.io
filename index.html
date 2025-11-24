@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BLACKPINK IN YOUR AREA! 💖</title>
+    <title>ROSÉ PARK - Official Fan Page 🌹</title>
     <style>
         body {
-            background: linear-gradient(45deg, #000000, #ff4da6, #9b59b6);
+            background: linear-gradient(45deg, #ffb6c1, #ff69b4, #db7093);
             background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
-            font-family: Arial, sans-serif;
+            animation: gradient 15s ease infinite;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            color: white;
+            color: #8b4513;
             margin: 0;
-            padding: 50px;
+            padding: 40px;
             min-height: 100vh;
         }
 
@@ -22,17 +22,29 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         h1 {
-            font-size: 3em;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-            margin-bottom: 30px;
+            font-size: 3.5em;
+            color: #c71585;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
         }
 
-        .members {
+        .subtitle {
+            font-size: 1.5em;
+            color: #8b4513;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .rose-gallery {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -40,169 +52,260 @@
             margin: 40px 0;
         }
 
-        .member {
-            width: 200px;
+        .rose-photo {
+            width: 280px;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            transition: transform 0.3s ease;
         }
 
-        .member:hover {
-            transform: scale(1.1);
+        .rose-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.4);
         }
 
-        .member img {
+        .rose-photo img {
             width: 100%;
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            height: 100%;
+            object-fit: cover;
         }
 
-        .member-name {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 1.2em;
+        .info-section {
+            background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .info-section h2 {
+            color: #c71585;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 10px;
         }
 
         .music-player {
-            background: rgba(255,255,255,0.2);
-            padding: 20px;
+            background: rgba(199, 21, 133, 0.1);
+            padding: 25px;
             border-radius: 15px;
-            margin: 30px auto;
-            max-width: 500px;
-            backdrop-filter: blur(10px);
+            margin: 30px 0;
+            border: 2px solid #ffb6c1;
         }
 
         button {
-            background: #ff4da6;
+            background: linear-gradient(45deg, #ff69b4, #c71585);
             color: white;
             border: none;
-            padding: 12px 25px;
+            padding: 15px 30px;
             margin: 10px;
             border-radius: 25px;
             cursor: pointer;
-            font-size: 1em;
-            transition: background 0.3s ease;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         button:hover {
-            background: #9b59b6;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
         }
 
-        .hidden {
-            display: none;
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
         }
 
-        #memberInfo {
-            background: rgba(0,0,0,0.7);
+        .stat-item {
+            background: white;
             padding: 20px;
             border-radius: 10px;
-            margin: 20px auto;
-            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            color: #c71585;
+            font-weight: bold;
+        }
+
+        .quote {
+            font-size: 1.3em;
+            color: #8b4513;
+            font-style: italic;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            border-left: 5px solid #ff69b4;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>💖 BLACKPINK IN YOUR AREA! 🖤</h1>
+        <h1>🌹 ROSÉ PARK 🌹</h1>
+        <div class="subtitle">BLACKPINK's Main Vocalist • The Amazing Vocalist</div>
         
+        <div class="rose-gallery">
+            <div class="rose-photo" onclick="showPhoto('ROSÉ 1')">
+                <img src="https://github.com/ly0597861-sys/ly0597861-sys.github.io/blob/main/Blackpink-Jump-Group-Photo-YG-RS.jpg?raw=true" alt="ROSÉ Beautiful Photo 1">
+            </div>
+            <div class="rose-photo" onclick="showPhoto('ROSÉ 2')">
+                <img src="https://github.com/ly0597861-sys/ly0597861-sys.github.io/blob/main/img-88fc9b38c3af5768e87bac291ea8beda%20(1).jpg?raw=true" alt="ROSÉ Beautiful Photo 2">
+            </div>
+            <div class="rose-photo" onclick="showPhoto('ROSÉ 3')">
+                <img src="https://github.com/ly0597861-sys/ly0597861-sys.github.io/blob/main/photo_2025-11-11_22-54-59.jpg?raw=true" alt="ROSÉ Beautiful Photo 3">
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">1997</div>
+                <div>Birth Year</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">Australia</div>
+                <div>Nationality</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">Main Vocal</div>
+                <div>Position</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">Guitar</div>
+                <div>Instrument</div>
+            </div>
+        </div>
+
+        <div class="quote">
+            "I want to be remembered as an artist who was genuine and true to herself."
+        </div>
+
+        <div class="info-section">
+            <h2>🎤 About ROSÉ</h2>
+            <p><strong>Full Name:</strong> Park Chae-young (Roséanne Park)</p>
+            <p><strong>Birthday:</strong> February 11, 1997</p>
+            <p><strong>Position:</strong> Main Vocalist, Lead Dancer</p>
+            <p><strong>Nationality:</strong> Korean-New Zealander (Born in New Zealand, raised in Australia)</p>
+            <p><strong>Specialty:</strong> Unique vocal color, guitar playing, fluent in Korean and English</p>
+        </div>
+
         <div class="music-player">
-            <h3>🎵 BLACKPINK 音乐</h3>
-            <button onclick="playMusic('DDU-DU DDU-DU')">播放 DDU-DU DDU-DU</button>
-            <button onclick="playMusic('Kill This Love')">播放 Kill This Love</button>
-            <button onclick="playMusic('How You Like That')">播放 How You Like That</button>
-            <button onclick="stopMusic()">停止音乐</button>
+            <h2>🎵 ROSÉ's Solo Music</h2>
+            <button onclick="playMusic('On The Ground')">🎧 Play - On The Ground</button>
+            <button onclick="playMusic('Gone')">🎧 Play - Gone</button>
+            <button onclick="playMusic('Hard to Love')">🎧 Play - Hard to Love</button>
+            <button onclick="stopMusic()">⏹️ Stop Music</button>
             <p id="nowPlaying"></p>
         </div>
 
-        <div class="members">
-            <div class="member" onclick="showMemberInfo('JISOO', '主唱', '1995年1月3日', '韩国')">
-                <img src="https://i.pinimg.com/736x/89/3d/8a/893d8a4d6b4d2b4e4b4e4b4e4b4e4b4e.jpg" alt="JISOO">
-                <div class="member-name">JISOO 💖</div>
-            </div>
-            <div class="member" onclick="showMemberInfo('JENNIE', '主Rapper', '1996年1月16日', '韩国')">
-                <img src="https://i.pinimg.com/736x/89/3d/8a/893d8a4d6b4d2b4e4b4e4b4e4b4e4b4e.jpg" alt="JENNIE">
-                <div class="member-name">JENNIE 🖤</div>
-            </div>
-            <div class="member" onclick="showMemberInfo('ROSÉ', '主唱', '1997年2月11日', '澳大利亚')">
-                <img src="https://i.pinimg.com/736x/89/3d/8a/893d8a4d6b4d2b4e4b4e4b4e4b4e4b4e.jpg" alt="ROSÉ">
-                <div class="member-name">ROSÉ 💝</div>
-            </div>
-            <div class="member" onclick="showMemberInfo('LISA', '主舞', '1997年3月27日', '泰国')">
-                <img src="https://i.pinimg.com/736x/89/3d/8a/893d8a4d6b4d2b4e4b4e4b4e4b4e4b4e.jpg" alt="LISA">
-                <div class="member-name">LISA 💕</div>
-            </div>
-        </div>
-
-        <div id="memberInfo" class="hidden">
-            <h3 id="infoName"></h3>
-            <p>定位: <span id="infoPosition"></span></p>
-            <p>生日: <span id="infoBirthday"></span></p>
-            <p>国籍: <span id="infoNationality"></span></p>
-            <button onclick="hideMemberInfo()">关闭</button>
-        </div>
-
         <div>
-            <button onclick="changeBackground()">切换背景特效</button>
-            <button onclick="showMessage()">BLINK专属消息</button>
+            <button onclick="changeTheme()">🎨 Change Theme Color</button>
+            <button onclick="showRoseFact()">💖 ROSÉ Fact</button>
+            <button onclick="surprise()">🎁 Surprise!</button>
         </div>
     </div>
 
     <script>
-        // 显示成员信息
-        function showMemberInfo(name, position, birthday, nationality) {
-            document.getElementById('infoName').textContent = name;
-            document.getElementById('infoPosition').textContent = position;
-            document.getElementById('infoBirthday').textContent = birthday;
-            document.getElementById('infoNationality').textContent = nationality;
-            document.getElementById('memberInfo').classList.remove('hidden');
-        }
-
-        function hideMemberInfo() {
-            document.getElementById('memberInfo').classList.add('hidden');
+        // 显示照片信息
+        function showPhoto(photoName) {
+            alert('You selected: ' + photoName + ' 🌹');
         }
 
         // 音乐播放功能
         function playMusic(songName) {
-            document.getElementById('nowPlaying').textContent = '正在播放: ' + songName + ' 🎶';
-            // 这里可以添加真实的音频播放代码
+            document.getElementById('nowPlaying').innerHTML = 
+                '<strong>🎶 Now Playing:</strong> ' + songName + ' by ROSÉ';
         }
 
         function stopMusic() {
-            document.getElementById('nowPlaying').textContent = '音乐已停止';
+            document.getElementById('nowPlaying').innerHTML = 
+                '<em>Music stopped</em>';
         }
 
-        // 背景切换
-        function changeBackground() {
-            const colors = [
-                'linear-gradient(45deg, #000000, #ff4da6, #9b59b6)',
-                'linear-gradient(45deg, #ff4da6, #000000, #3498db)',
-                'linear-gradient(45deg, #9b59b6, #ff4da6, #000000)',
-                'linear-gradient(45deg, #e74c3c, #f1c40f, #2ecc71)'
+        // 切换主题颜色
+        function changeTheme() {
+            const themes = [
+                'linear-gradient(45deg, #ffb6c1, #ff69b4, #db7093)',
+                'linear-gradient(45deg, #ffd700, #ff69b4, #9370db)',
+                'linear-gradient(45deg, #98fb98, #ffb6c1, #87ceeb)',
+                'linear-gradient(45deg, #dda0dd, #ff69b4, #f0e68c)'
             ];
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            document.body.style.background = randomColor;
+            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+            document.body.style.background = randomTheme;
         }
 
-        // 显示专属消息
-        function showMessage() {
-            const messages = [
-                'BLACKPINK IN YOUR AREA! 💖',
-                '永远支持BLACKPINK! 🖤',
-                'BLINK们团结一心! 💕',
-                '期待BLACKPINK回归! 🎵',
-                '你是最棒的BLINK! ✨'
+        // 显示ROSÉ小知识
+        function showRoseFact() {
+            const facts = [
+                'ROSÉ can play both guitar and piano! 🎸',
+                'She was born in New Zealand and raised in Australia! 🇦🇺',
+                'ROSÉ speaks fluent Korean and English! 🗣️',
+                'Her unique vocal color is called "honey voice"! 🍯',
+                'She loves collecting perfumes! 💫'
             ];
-            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            alert(randomMessage);
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            alert('💖 ROSÉ Fact:\n' + randomFact);
         }
 
-        // 页面加载完成后的动画
+        // 惊喜功能
+        function surprise() {
+            const surprises = [
+                'ROSÉ loves you! 💝',
+                'You are an amazing BLINK! ✨',
+                'Thank you for supporting ROSÉ! 🌹',
+                'ROSÉ appreciates all her fans! 🥰'
+            ];
+            const randomSurprise = surprises[Math.floor(Math.random() * surprises.length)];
+            
+            // 创建飘落玫瑰效果
+            for(let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    const rose = document.createElement('div');
+                    rose.innerHTML = '🌹';
+                    rose.style.position = 'fixed';
+                    rose.style.left = Math.random() * 100 + 'vw';
+                    rose.style.top = '-50px';
+                    rose.style.fontSize = '30px';
+                    rose.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+                    document.body.appendChild(rose);
+                    
+                    setTimeout(() => rose.remove(), 5000);
+                }, i * 200);
+            }
+            
+            alert(randomSurprise);
+        }
+
+        // 添加飘落动画
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // 页面加载动画
         window.onload = function() {
-            document.querySelector('h1').style.opacity = '0';
-            document.querySelector('h1').style.transition = 'opacity 2s';
+            document.querySelector('.container').style.opacity = '0';
+            document.querySelector('.container').style.transform = 'translateY(50px)';
+            document.querySelector('.container').style.transition = 'all 1s ease';
+            
             setTimeout(() => {
-                document.querySelector('h1').style.opacity = '1';
-            }, 500);
+                document.querySelector('.container').style.opacity = '1';
+                document.querySelector('.container').style.transform = 'translateY(0)';
+            }, 300);
         };
     </script>
 </body>
